@@ -6,6 +6,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace>Satrabel.LanguageModule</RootNamespace>
+
+
+   <PackageId>Satrabel.LanguageModule.EntityFrameworkCore</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sacha Trauwaen</Authors>
+    <Company>Satrabel</Company>
+    <IsPackable>true</IsPackable>
+    <PackageDescription>Satrabel.LanguageModule.EntityFrameworkCore</PackageDescription>
+    <RepositoryUrl>https://github.com/sachatrauwaen/LanguageModule</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
   </PropertyGroup>
 
   <ItemGroup>

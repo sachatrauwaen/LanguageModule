@@ -12,7 +12,7 @@
     <Authors>Sacha Trauwaen</Authors>
     <Company>Satrabel</Company>
     <IsPackable>true</IsPackable>
-    <PackageDescription>AbpCrud</PackageDescription>
+    <PackageDescription>Satrabel.LanguageModule.Application.Contracts</PackageDescription>
     <RepositoryUrl>https://github.com/sachatrauwaen/LanguageModule</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 

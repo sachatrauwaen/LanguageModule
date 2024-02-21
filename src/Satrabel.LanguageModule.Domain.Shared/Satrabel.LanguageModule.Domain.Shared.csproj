@@ -7,6 +7,16 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Satrabel.LanguageModule</RootNamespace>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+
+ <PackageId>Satrabel.LanguageModule.Domain.Shared</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sacha Trauwaen</Authors>
+    <Company>Satrabel</Company>
+    <IsPackable>true</IsPackable>
+    <PackageDescription>Satrabel.LanguageModule.Domain.Shared</PackageDescription>
+    <RepositoryUrl>https://github.com/sachatrauwaen/LanguageModule</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
   </PropertyGroup>
 
   <ItemGroup>

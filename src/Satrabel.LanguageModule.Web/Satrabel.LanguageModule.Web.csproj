@@ -10,6 +10,20 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Satrabel.LanguageModule.Web</RootNamespace>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+
+
+  <PackageId>Satrabel.LanguageModule.Web</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sacha Trauwaen</Authors>
+    <Company>Satrabel</Company>
+
+   
+
+    <PackageDescription>AbpCrud</PackageDescription>
+    <RepositoryUrl>https://github.com/sachatrauwaen/LanguageModule</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+
   </PropertyGroup>
 
   <ItemGroup>

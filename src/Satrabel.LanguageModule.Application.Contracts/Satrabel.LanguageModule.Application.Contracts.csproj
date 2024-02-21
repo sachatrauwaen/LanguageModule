@@ -6,6 +6,16 @@
     <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <RootNamespace>Satrabel.LanguageModule</RootNamespace>
+
+    <PackageId>Satrabel.LanguageModule.Application.Contracts</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sacha Trauwaen</Authors>
+    <Company>Satrabel</Company>
+    <IsPackable>true</IsPackable>
+    <PackageDescription>AbpCrud</PackageDescription>
+    <RepositoryUrl>https://github.com/sachatrauwaen/LanguageModule</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
   </PropertyGroup>
 
   <ItemGroup>

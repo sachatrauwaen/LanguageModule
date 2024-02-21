@@ -1,0 +1,8 @@
+@page "/LanguageModule"
+@using Microsoft.Extensions.Localization
+@using global::Satrabel.LanguageModule.Localization
+@inject IStringLocalizer<LanguageModuleResource> L
+@{
+}
+<h1>LanguageModule</h1>
+<p>@L["SamplePageMessage"]</p>

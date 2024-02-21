@@ -1,0 +1,20 @@
+﻿@page
+@using Satrabel.LanguageModule.Localization
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model Satrabel.LanguageModule.Pages.LanguageOptions.CreateModalModel
+@inject IStringLocalizer<LanguageModuleResource> L
+@{
+    Layout = null;
+}
+
+
+<abp-dynamic-form abp-model="Language" asp-page="/LanguageModule/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="@L["NewLanguage"].Value" id="test"></abp-modal-header>
+        <abp-modal-body>
+            <abp-form-content />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</abp-dynamic-form>

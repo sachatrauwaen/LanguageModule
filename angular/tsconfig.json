@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@satrabel/language-module": [
+        "projects/language-module/src/public-api.ts"
+      ],
+      "@satrabel/language-module/config": [
+        "projects/language-module/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/language-module/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/language-module/src/lib/proxy/*"]
+    }
+  }
+}

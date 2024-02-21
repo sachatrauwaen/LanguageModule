@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Satrabel.LanguageModule.Domain.Shared": {
+      "path": "src/Satrabel.LanguageModule.Domain.Shared/Satrabel.LanguageModule.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Domain": {
+      "path": "src/Satrabel.LanguageModule.Domain/Satrabel.LanguageModule.Domain.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Application.Contracts": {
+      "path": "src/Satrabel.LanguageModule.Application.Contracts/Satrabel.LanguageModule.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Application": {
+      "path": "src/Satrabel.LanguageModule.Application/Satrabel.LanguageModule.Application.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.EntityFrameworkCore": {
+      "path": "src/Satrabel.LanguageModule.EntityFrameworkCore/Satrabel.LanguageModule.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.MongoDB": {
+      "path": "src/Satrabel.LanguageModule.MongoDB/Satrabel.LanguageModule.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.HttpApi": {
+      "path": "src/Satrabel.LanguageModule.HttpApi/Satrabel.LanguageModule.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.HttpApi.Client": {
+      "path": "src/Satrabel.LanguageModule.HttpApi.Client/Satrabel.LanguageModule.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.TestBase": {
+      "path": "test/Satrabel.LanguageModule.TestBase/Satrabel.LanguageModule.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.EntityFrameworkCore.Tests": {
+      "path": "test/Satrabel.LanguageModule.EntityFrameworkCore.Tests/Satrabel.LanguageModule.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.MongoDB.Tests": {
+      "path": "test/Satrabel.LanguageModule.MongoDB.Tests/Satrabel.LanguageModule.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.Domain.Tests": {
+      "path": "test/Satrabel.LanguageModule.Domain.Tests/Satrabel.LanguageModule.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.Application.Tests": {
+      "path": "test/Satrabel.LanguageModule.Application.Tests/Satrabel.LanguageModule.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.HttpApi.Host": {
+      "path": "host/Satrabel.LanguageModule.HttpApi.Host/Satrabel.LanguageModule.HttpApi.Host.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.Web": {
+      "path": "src/Satrabel.LanguageModule.Web/Satrabel.LanguageModule.Web.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Satrabel.LanguageModule.HttpApi.Client.ConsoleTestApp/Satrabel.LanguageModule.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Satrabel.LanguageModule.Web.Host": {
+      "path": "host/Satrabel.LanguageModule.Web.Host/Satrabel.LanguageModule.Web.Host.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.AuthServer": {
+      "path": "host/Satrabel.LanguageModule.AuthServer/Satrabel.LanguageModule.AuthServer.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.Host.Shared": {
+      "path": "host/Satrabel.LanguageModule.Host.Shared/Satrabel.LanguageModule.Host.Shared.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.Web.Unified": {
+      "path": "host/Satrabel.LanguageModule.Web.Unified/Satrabel.LanguageModule.Web.Unified.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.Blazor": {
+      "path": "src/Satrabel.LanguageModule.Blazor/Satrabel.LanguageModule.Blazor.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Blazor.Host": {
+      "path": "host/Satrabel.LanguageModule.Blazor.Host/Satrabel.LanguageModule.Blazor.Host.abppkg",
+      "folder": "host"
+    },
+    "Satrabel.LanguageModule.Blazor.Server": {
+      "path": "src/Satrabel.LanguageModule.Blazor.Server/Satrabel.LanguageModule.Blazor.Server.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Blazor.WebAssembly": {
+      "path": "src/Satrabel.LanguageModule.Blazor.WebAssembly/Satrabel.LanguageModule.Blazor.WebAssembly.abppkg",
+      "folder": "src"
+    },
+    "Satrabel.LanguageModule.Blazor.Server.Host": {
+      "path": "host/Satrabel.LanguageModule.Blazor.Server.Host/Satrabel.LanguageModule.Blazor.Server.Host.abppkg",
+      "folder": "host"
+    }
+  }
+}

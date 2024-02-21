@@ -1,0 +1,35 @@
+﻿@page
+@using Satrabel.LanguageModule.Localization
+@model Satrabel.LanguageModule.Pages.LanguageOptions.LanguageModel
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Authorization
+@using Satrabel.LanguageModule.Permissions
+@inject IStringLocalizer<LanguageModuleResource> L
+@inject IAuthorizationService AuthorizationService
+
+@section scripts
+{
+    <abp-script src="/Pages/LanguageModule/Index.js" />
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Languages"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-end">
+                @if (await AuthorizationService.IsGrantedAsync(LanguageModulePermissions.Language.Create))
+                {
+                    <abp-button id="NewLanguageButton"
+                                text="@L["NewLanguage"].Value"
+                                icon="plus"
+                                button-type="Primary" />
+                }
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="LanguageTable"></abp-table>
+    </abp-card-body>
+</abp-card>

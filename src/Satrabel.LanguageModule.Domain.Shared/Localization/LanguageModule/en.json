@@ -1,0 +1,26 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the LanguageModule module",
+
+    "Menu:Languages": "Languages",
+
+    "Permission:LanguageModule": "LanguageModule",
+    "Permission:Language": "Language",
+    "Permission:Language.Create": "Create a new language",
+    "Permission:Language.Edit": "Edit a existing language",
+    "Permission:Language.Delete": "Delete a language",
+    "Permission:Language.SetDefault": "Set a Dafault language",
+    "Update": "Update Language",
+    "NewLanguage": "New Language",
+    "Edit": "Edit",
+    "Actions": "Actions",
+    "Delete": "Delete",
+    "SetDefault": "Set Dafault language",
+    "DefaultLanguage": "Default Language",
+    "trueStandardLanguage": "yes"
+  }
+}
+
+

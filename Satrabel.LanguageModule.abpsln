@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "Satrabel.LanguageModule": {
+      "path": "Satrabel.LanguageModule.abpmdl"
+    }
+  }
+}

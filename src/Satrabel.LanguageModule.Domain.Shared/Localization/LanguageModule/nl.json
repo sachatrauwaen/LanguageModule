@@ -1,0 +1,25 @@
+{
+  "culture": "nl",
+  "texts": {
+    "MyAccount": "Mijn account",
+    "SamplePageMessage": "Een voorbeeldpagina voor de LanguageModule module",
+
+    "Menu:Languages": "Talen",
+
+    "Permission:LanguageModule": "TaalModule",
+    "Permission:Language": "Taal",
+    "Permission:Language.Create": "Creëer een nieuwe taal",
+    "Permission:Language.Edit": "Bewerk een bestaande taal",
+    "Permission:Language.Delete": "Verwijder een taal",
+    "Permission:Language.SetDefault": "Stel een standaardtaal in",
+    "Update": "Taal bijwerken",
+    "NewLanguage": "Nieuwe taal",
+    "Edit": "Bewerken",
+    "Actions": "Acties",
+    "Delete": "Verwijderen",
+    "SetDefault": "Standaardtaal instellen",
+    "DefaultLanguage": "Standaardtaal",
+    "trueStandardLanguage": "ja"
+
+  }
+}

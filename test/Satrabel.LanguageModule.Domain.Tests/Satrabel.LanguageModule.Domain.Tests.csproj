@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Satrabel.LanguageModule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Satrabel.LanguageModule.Domain\Satrabel.LanguageModule.Domain.csproj" />
+    <ProjectReference Include="..\Satrabel.LanguageModule.TestBase\Satrabel.LanguageModule.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>

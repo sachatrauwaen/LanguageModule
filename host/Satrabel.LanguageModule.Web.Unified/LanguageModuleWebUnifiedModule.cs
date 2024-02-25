@@ -43,6 +43,10 @@ using Volo.Abp.Threading;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.AspNetCore.Mvc;
 using Satrabel.LanguageModule.Providers;
+using Microsoft.AspNetCore.Localization;
+using Autofac.Core;
+using Microsoft.Extensions.Localization;
+using Microsoft.AspNetCore.RequestLocalization;
 //using Satrabel.LanguageModule.Providers;
 
 namespace Satrabel.LanguageModule;
@@ -86,6 +90,8 @@ public class LanguageModuleWebUnifiedModule : AbpModule
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
 
+        //AbpStringLocalizerFactory2.Replace(context.Services);
+
         Configure<AbpDbContextOptions>(options =>
         {
             options.UseSqlServer();
@@ -110,11 +116,10 @@ public class LanguageModuleWebUnifiedModule : AbpModule
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
-       
 
         Configure<AbpLocalizationOptions>(options =>
         {
-            options.Languages.Add(new LanguageInfo("ar", "ar", "العربية"));
+            //options.Languages.Add(new LanguageInfo("ar", "ar", "العربية"));
             options.Languages.Add(new LanguageInfo("cs", "cs", "Čeština"));
             options.Languages.Add(new LanguageInfo("en", "en", "English"));
             options.Languages.Add(new LanguageInfo("en-GB", "en-GB", "English (UK)"));
@@ -126,24 +131,29 @@ public class LanguageModuleWebUnifiedModule : AbpModule
             options.Languages.Add(new LanguageInfo("hu", "hu", "Magyar"));
             options.Languages.Add(new LanguageInfo("pt-BR", "pt-BR", "Português (Brasil)"));
             options.Languages.Add(new LanguageInfo("ro-RO", "ro-RO", "Română"));
-            options.Languages.Add(new LanguageInfo("ru", "ru", "Русский"));
+            //options.Languages.Add(new LanguageInfo("ru", "ru", "Русский"));
             options.Languages.Add(new LanguageInfo("sk", "sk", "Slovak"));
             options.Languages.Add(new LanguageInfo("tr", "tr", "Türkçe"));
-            options.Languages.Add(new LanguageInfo("zh-Hans", "zh-Hans", "简体中文"));
-            options.Languages.Add(new LanguageInfo("zh-Hant", "zh-Hant", "繁體中文"));
+            //options.Languages.Add(new LanguageInfo("zh-Hans", "zh-Hans", "简体中文"));
+            //options.Languages.Add(new LanguageInfo("zh-Hant", "zh-Hant", "繁體中文"));
             options.Languages.Add(new LanguageInfo("de-DE", "de-DE", "Deutsch"));
             options.Languages.Add(new LanguageInfo("es", "es", "Español"));
-            options.Languages.Add(new LanguageInfo("el", "el", "Ελληνικά"));
+            //options.Languages.Add(new LanguageInfo("el", "el", "Ελληνικά"));
             options.Languages.Add(new LanguageInfo("nl", "nl", "Nederlands"));
-
-
         });
+
+        //Configure<RequestLocalizationOptions>(options =>
+        //{
+        //    options.DefaultRequestCulture = new RequestCulture("en");
+        //    options.SupportedCultures = cultures;
+        //    options.SupportedUICultures = cultures;
+        //});
 
         Configure<AbpMultiTenancyOptions>(options =>
         {
             options.IsEnabled = MultiTenancyConsts.IsEnabled;
         });
-
+       
 #if DEBUG
         context.Services.Replace(ServiceDescriptor.Singleton<IEmailSender, NullEmailSender>());
 #endif
@@ -183,6 +193,8 @@ public class LanguageModuleWebUnifiedModule : AbpModule
         {
             options.SwaggerEndpoint("/swagger/v1/swagger.json", "Support APP API");
         });
+
+
 
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();

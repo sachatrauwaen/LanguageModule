@@ -13,6 +13,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Satrabel.LanguageModule.Providers;
 using Volo.Abp.Localization;
+using Microsoft.AspNetCore.RequestLocalization;
 
 namespace Satrabel.LanguageModule.Web;
 
@@ -69,7 +70,9 @@ public class LanguageModuleWebModule : AbpModule
 
         Configure<AbpLocalizationOptions>(options =>
         {
-            
         });
+
+        context.Services.Replace(ServiceDescriptor.Transient<IAbpRequestLocalizationOptionsProvider, LanguageModuleRequestLocalizationOptionsProvider>());
+
     }
 }

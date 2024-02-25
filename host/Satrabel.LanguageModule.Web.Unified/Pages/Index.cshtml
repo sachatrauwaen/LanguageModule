@@ -2,6 +2,8 @@
 @using Localization.Resources.AbpUi
 @using Microsoft.Extensions.Localization
 @using Satrabel.LanguageModule.Pages
+@using System.Globalization
+@using Volo.Abp.Localization
 @using Volo.Abp.Users
 @model IndexModel
 @inject IStringLocalizer<AbpUiResource> Localizer
@@ -17,6 +19,7 @@
         else
         {
             <span>Welcome: @CurrentUser.UserName</span>
+            <p>@CultureInfo.CurrentCulture.Name @CultureHelper.IsValidCultureCode("de")</p>
         }
         <hr />
         <p class="text-end"><a href="https://abp.io?ref=tmpl" target="_blank">abp.io</a></p>

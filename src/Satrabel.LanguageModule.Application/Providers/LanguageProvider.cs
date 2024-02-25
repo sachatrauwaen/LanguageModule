@@ -44,13 +44,27 @@ namespace Satrabel.LanguageModule.Providers
                     lang.DisplayName,
                     lang.FlagIcon)).OrderBy(l => l.DisplayName).ToList();
 
-                var languageCacheItems = languages.Select(lang => new LanguageCacheItem
+                List<LanguageCacheItem> languageCacheItems;
+                if (languages.Any())
                 {
-                    CultureName = lang.CultureName,
-                    UiCultureName = lang.UiCultureName,
-                    DisplayName = lang.DisplayName,
-                    FlagIcon = lang.FlagIcon
-                }).ToList();
+                    languageCacheItems = languages.Select(lang => new LanguageCacheItem
+                    {
+                        CultureName = lang.CultureName,
+                        UiCultureName = lang.UiCultureName,
+                        DisplayName = lang.DisplayName,
+                        FlagIcon = lang.FlagIcon
+                    }).ToList();
+                }
+                else
+                {
+                    languageCacheItems = _options.Value.Languages.Select(lang => new LanguageCacheItem
+                    {
+                        CultureName = lang.CultureName,
+                        UiCultureName = lang.UiCultureName,
+                        DisplayName = lang.DisplayName,
+                        FlagIcon = lang.FlagIcon
+                    }).ToList();
+                }
 
                 await _cache.SetAsync(cacheKey, languageCacheItems, new DistributedCacheEntryOptions
                 {

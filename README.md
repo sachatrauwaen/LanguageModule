@@ -1,6 +1,8 @@
 # LanguageModule
 Language Module for Abp
 
+[![.NET](https://github.com/sachatrauwaen/LanguageModule/actions/workflows/main.yml/badge.svg)](https://github.com/sachatrauwaen/LanguageModule/actions/workflows/main.yml)
+
 ## Features
 
 - **Create, Delete, and Edit Languages**: Administrators can easily add new languages, remove unnecessary ones, and update details of existing languages to reflect any changes.

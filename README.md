@@ -1,13 +1,18 @@
-# LanguageModule
-Language Module for Abp
+# Vue.js CMS for ABP.io
 
-[![.NET](https://github.com/sachatrauwaen/LanguageModule/actions/workflows/main.yml/badge.svg)](https://github.com/sachatrauwaen/LanguageModule/actions/workflows/main.yml)
+This project is a content management system (CMS) built with Vue.js for ABP.io. It features a dynamic and user-friendly interface that allows for efficient management of web content, offering a rich set of tools tailored for content creation and organization. The CMS supports a versatile file system for pages, enabling users to easily structure their content through drag-and-drop functionality.
 
 ## Features
 
-- **Create, Delete, and Edit Languages**: Administrators can easily add new languages, remove unnecessary ones, and update details of existing languages to reflect any changes.
-- **Set a Default Language**: This feature allows setting a particular language as the default for the application, enhancing the user experience by providing a primary language selection.
-- **Caching**: To ensure high performance and reduce database load, language settings are cached. The cache is smartly invalidated and refreshed on any update, deletion, or creation of a language, ensuring data consistency and quick access.
-- **Localization**: The module is designed to support localization, enabling the application to offer a tailored user experience in multiple languages(English, French and Dutch). This is crucial for global applications aiming to serve a diverse user base.
-- **Permissions**: Access to different functionalities within the module is controlled through permissions. This allows for granular control over who can create, edit, delete, or set the default language, ensuring that only authorized users can make changes to the language settings.
-- **Multi-Tenancy Support**: The module is built to support multi-tenancy, allowing different tenants to manage their language settings independently. This feature is essential for SaaS applications looking to provide personalized experiences to each tenant.
+### Current Features
+
+- **Drag-and-Drop Page Organization**: Users can intuitively drag and drop pages to reorder them or create subpages, offering a flexible way to structure the site navigation.
+- **Content Blocks**: The CMS supports a variety of customizable content blocks, including text, video, and images. These blocks can be easily arranged via drag-and-drop to design the page layout.
+- **Page Settings**: Each page comes with its settings, allowing users to specify the slug, meta data, page title, and more, to optimize SEO and maintain the site's organization.
+- **Archiving**: Pages can have there own custom regions with there own content blocks.
+
+### Upcoming Features
+
+- **Custom Content Block Modals**: A new feature will enable users to create their own custom content blocks, enhancing the CMS's flexibility and allowing for more personalized content creation.
+- **Permissions**: Advanced permissions will be implemented, restricting the creation and editing of pages to admins only. This will help maintain the integrity and security of the site's content.
+- **Localization**: Support for localization will be added, making it possible to translate the site into multiple languages and reach a wider audience.
